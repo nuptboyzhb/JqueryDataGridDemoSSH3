@@ -91,15 +91,15 @@
          </property>
       </bean>
 		
-	<!--/////////////////////////////////////注入Dao/////////////////////////////////////-->
+	<!--********************************注入Dao*********************************************-->
 	<bean id="baseDao" class="edu.njupt.zhb.dao.BaseDao">
     	<property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
-    <!--/////////////////////////////////////注入Services/////////////////////////////////////-->
-    <bean id="dataGridDemoService" class="edu.njupt.zhb.service.DataGridDemoService">
+    <!--********************************注入Services********************************-->
+    <bean id="dataGridDemoService" class="edu.njupt.zhb.service.DataGridDemoServiceImpl">
     	<property name="baseDao" ref="baseDao"></property>
     </bean>
-	<!--/////////////////////////////////////注入Action/////////////////////////////////////-->
+	<!--********************************注入Action********************************-->
 	<bean id="dataGridDemoAction" class="edu.njupt.zhb.action.DataGridDemoAction" scope="prototype">
 		<property name="dataGridDemoService" ref="dataGridDemoService"></property>
 	</bean>
