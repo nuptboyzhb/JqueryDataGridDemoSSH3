@@ -1,0 +1,88 @@
+/*container*/
+#ym-window{
+	/*background:#ff0;*/overflow:hidden;
+	font-size:12px;font-family:'宋体'
+}
+
+/*header*/
+.ym-tl{padding-left:3px;background:#CFD7EC url(images/title_bg_left.gif) no-repeat 0 0}
+.ym-tr{padding-right:3px;background:#CFD7EC url(images/title_bg_right.gif) no-repeat right 0;}
+.ym-tc{background:#CFD7EC url(images/title_bg_center.gif) repeat-x 0 0;overflow:hidden;height:25px;line-height:25px;}
+.ym-ttc{height:3px}
+.ym-header-text{font-size:12px;font-weight:bold;color:#16428a;margin-left:5px;float:left}
+.ym-header-tools{float:right;margin-top:5px}
+.ym-header-tools strong{display:none}
+
+/*body*/
+.ym-ml{background:url(images/win_l.gif) repeat-y 0 0;padding-left:6px;}
+.ym-mr{background:url(images/win_r.gif) repeat-y right 0;padding-right:6px;}
+.ym-mc{ border:1px solid #99bbe8; border-bottom:none;}
+.ym-body{overflow:auto;padding:0;font-size:12px;background:#fff;}
+
+/*button*/
+.ym-btn{border:1px solid #99bbe8; border-top:none;text-align:center;background:#fff;}
+
+/*footer*/
+.ym-bl{background:url(images/win_lb.gif) no-repeat 0 top;padding-left:6px;}
+.ym-br{background:url(images/win_rb.gif) no-repeat right top;padding-right:6px}
+.ym-bc{background:url(images/win_b.gif) repeat-x 0 top;height:7px;font-size:3px}
+
+/*icon*/
+.ymPrompt_alert{
+	padding-left:90px;
+	background:url(images/info.gif) no-repeat 20px 50%
+}
+.ymPrompt_succeed{
+	padding-left:90px;
+	background:url(images/right.gif) no-repeat 20px 50%
+}
+.ymPrompt_error{
+	padding-left:90px;
+	background:url(images/err.gif) no-repeat 20px 50%
+}
+.ymPrompt_confirm{
+	padding-left:90px;
+	background:url(images/ask.gif) no-repeat 20px 50%
+}
+.ymPrompt_alert .ym-content,.ymPrompt_succeed .ym-content,.ymPrompt_error .ym-content,.ymPrompt_confirm .ym-content{padding:50px 0 0}
+/*图标公共定义*/
+.ym-header-tools div{
+	cursor:pointer;
+	width:16px;height:16px;float:left;margin:0 1px;
+	background:url(images/ico.gif) no-repeat 0 0;
+}
+.ymPrompt_close{
+	background-position:-16px 0 !important;
+}
+.ymPrompt_max{
+	background-position:0 -16px !important;
+}
+.ymPrompt_min{
+	background-position:0 0 !important;
+}
+.ymPrompt_normal{
+	background-position:-16px -16px !important;
+}
+
+/*取消确认按钮样式
+input.btnStyle{
+	background:url(images/btn_bg.gif) no-repeat;
+	width:80px;height:21px;line-height:21px;
+	font-size:12px;color:#183C94;border:0;margin:10px 0
+}*/
+
+input.btnStyle {
+	width:70px;
+	height:24px;
+	border:none;
+	font-size:13px;
+	padding:3px 0 0 15px ;
+	margin:0 0 5px;
+	background:url(images/bg_btn_save.gif) no-repeat;}
+	
+input.btnStyle:hover {
+	background:url(images/bg_btn_save.gif) center -24px no-repeat;}
+
+
+
+

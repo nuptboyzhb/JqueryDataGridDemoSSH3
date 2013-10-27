@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+.noneinput{
+	width:150px;
+	height:21px;
+	border:1px solid #A4BED4;
+}
+
+/*===============弹框===============*/
+		
+.div_popup_content {
+	background:#fff;
+	/*border:1px solid #99bbe8;*/
+	padding:10px;
+	overflow:auto;}
+	
+.div_popup_content table td , .div_popup_content table th {
+	padding:10px;
+	border:1px solid #ccc;
+	font-size:12px;}
+	
+.div_popup_content table{
+	border-collapse:collapse;
+	margin: 0 auto;
+}
+
+.div_popup_content table td span{
+	font-size:12px;
+	font-weight: bold;
+}

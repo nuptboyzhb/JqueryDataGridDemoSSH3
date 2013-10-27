@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="JqueryDataGridDemo1"
+  id="myeclipse.1379422277993"
+  context-root="/JqueryDataGridDemo1"
+  j2ee-spec="5.0"
+  archive="JqueryDataGridDemo1.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+
