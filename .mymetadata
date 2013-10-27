@@ -3,7 +3,7 @@
   type="WEB"
   name="JqueryDataGridDemoSSH"
   id="myeclipse.1379422277993"
-  context-root="/JqueryDataGridDemo1"
+  context-root="/JqueryDataGridDemoSSH"
   j2ee-spec="5.0"
   archive="JqueryDataGridDemoSSH.war">
   <attributes>
