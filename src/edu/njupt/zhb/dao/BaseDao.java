@@ -19,7 +19,6 @@ import org.hibernate.Query;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 public class BaseDao<T> extends HibernateDaoSupport {
-	
 	/**
 	 * 保存
 	 * 
