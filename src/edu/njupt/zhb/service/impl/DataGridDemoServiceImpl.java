@@ -11,6 +11,7 @@ import java.util.List;
 import net.sf.json.JSONObject;
 import edu.njupt.zhb.dao.BaseDao;
 import edu.njupt.zhb.model.Student;
+import edu.njupt.zhb.service.DataGridDemoService;
 import edu.njupt.zhb.tools.DataGrid;
 import edu.njupt.zhb.tools.Tips;
 
@@ -20,7 +21,7 @@ import edu.njupt.zhb.tools.Tips;
  *mail:    zhb931706659@126.com
  *2013-10-26  Nanjing,njupt,China
  */
-public class DataGridDemoServiceImpl {
+public class DataGridDemoServiceImpl implements DataGridDemoService {
 	private BaseDao<Student> baseDao;
 
 	public BaseDao<Student> getBaseDao() {

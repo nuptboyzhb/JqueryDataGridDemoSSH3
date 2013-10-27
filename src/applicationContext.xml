@@ -96,7 +96,7 @@
     	<property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
     <!--********************************注入Services********************************-->
-    <bean id="dataGridDemoService" class="edu.njupt.zhb.service.DataGridDemoServiceImpl">
+    <bean id="dataGridDemoService" class="edu.njupt.zhb.service.impl.DataGridDemoServiceImpl">
     	<property name="baseDao" ref="baseDao"></property>
     </bean>
 	<!--********************************注入Action********************************-->
