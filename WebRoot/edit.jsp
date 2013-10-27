@@ -27,32 +27,44 @@
 		var score = $('#score').val();
 		if(id==""){
 			alert("学号不能为空");
-			document.myform.ssjczbh.focus();
+			document.myform.id.focus();
+			return false;
+		}else if(/^d{1,9}$/.test(id)){
+			alert("只能输入1-9位数字");
+			document.myform.id.focus();
 			return false;
 		}
 		else if(name==""){
 			alert("姓名不能为空");
-			document.myform.gxddh.focus();
+			document.myform.name.focus();
 			return false;
 		}
 		else if(name.length>=32){
 			alert("姓名长度不能超过32位");
-			document.myform.gxddh.focus();
+			document.myform.name.focus();
 			return false;
 		}
 		else if(course==""){
 			alert("课程不能为空");
-			document.myform.gxddh.focus();
+			document.myform.course.focus();
 			return false;
 		}
 		else if(course.length>=32){
 			alert("课程长度不能超过32位");
-			document.myform.gxddh.focus();
+			document.myform.course.focus();
 			return false;
 		}
 		else if(score==""){
 			alert("分数不能为空");
-			document.myform.gxddh.focus();
+			document.myform.score.focus();
+			return false;
+		}else if(/^d{1,2}$/.test(score)){
+			alert("只能输入100以内的数字");
+			document.myform.score.focus();
+			return false;
+		}else if(remarks.length>512){
+			alert("备注长度不能超过512位");
+			document.myform.remarks.focus();
 			return false;
 		}
 		var form=new Form("form_add","editStudent");
@@ -91,7 +103,7 @@
     	<tr>
     		<th>备注</th>
     		<td colspan="3">
-    			<textarea style="border:1px solid #A4BED4" name="student.remarks" cols="58" rows="4"><%=GetParamFromURL.getParam(request,"remarks")%></textarea>
+    			<textarea style="border:1px solid #A4BED4" id="remarks" name="student.remarks" cols="58" rows="4"><%=GetParamFromURL.getParam(request,"remarks")%></textarea>
     		</td>
     	</tr>
     	<tr>

@@ -32,7 +32,6 @@ public class DataGridDemoAction extends ActionSupport {
 	 * 
 	 */
 	private static final long serialVersionUID = -3318989776253565435L;
-    
 	private Student student;//用于添加学生时接收前台的数据
 	
 	public Student getStudent() {
