@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Custom DataGrid Pager - jQuery EasyUI Demo</title>
+	<title>Java SSH DataGrid Demo</title>
 	<link rel="stylesheet" type="text/css" href="js/themes/default/easyui.css">
 	<link rel="stylesheet" type="text/css" href="js/themes/icon.css">
 	<link rel="stylesheet" type="text/css" href="js/demo/demo.css">
@@ -92,10 +92,10 @@
 	</script>
 </head>
 <body>
-	<h2>Custom DataGrid Pager</h2>
+	<h2>Java SSH DataGrid Demo</h2>
 	<div class="demo-info">
 		<div class="demo-tip icon-tip"></div>
-		<div>You can append some buttons to the standard datagrid pager bar.</div>
+		<div>This is a Java Web Application Base on Struts2+Spring+Hibernate. @author:Haibo Zheng</div>
 	</div>
 	<div style="margin:10px 0;"></div>
 	<div id="tb">

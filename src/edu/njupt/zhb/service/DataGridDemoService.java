@@ -23,6 +23,6 @@ import edu.njupt.zhb.tools.Tips;
 public interface DataGridDemoService {
 	public String getStudentList(int page, int rows);
 	public String addStudent(Student student);
-	public String deleteStudent(int studentid);
+	public String deleteStudent(String studentid);
 	public String editStudent(Student student);
 }

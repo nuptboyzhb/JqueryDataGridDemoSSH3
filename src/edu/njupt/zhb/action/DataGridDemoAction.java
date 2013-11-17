@@ -41,13 +41,14 @@ public class DataGridDemoAction extends ActionSupport {
 	public void setStudent(Student student) {
 		this.student = student;
 	}
-    private int studentId;//用户删除时，根据ID删除
+    private String studentId;//用户删除时，根据ID删除
    
-	public int getStudentId() {
+	
+	public String getStudentId() {
 		return studentId;
 	}
 
-	public void setStudentId(int studentId) {
+	public void setStudentId(String studentId) {
 		this.studentId = studentId;
 	}
 	private DataGridDemoService dataGridDemoService;
@@ -108,7 +109,7 @@ public class DataGridDemoAction extends ActionSupport {
 	 * @return
 	 */
 	public String deleteStudent(){
-		if(studentId==0){
+		if(studentId==null){
 			Tips tips = new Tips();
 			tips.setMsg("删除失败！学号无效");
 			getPrintWriter().write(JSONArray.fromObject(tips).toString());

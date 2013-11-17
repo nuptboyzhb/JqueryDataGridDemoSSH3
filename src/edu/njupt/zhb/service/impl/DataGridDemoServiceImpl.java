@@ -60,11 +60,11 @@ public class DataGridDemoServiceImpl implements DataGridDemoService {
 		tips.setMsg("添加成功");
 		return JSONObject.fromObject(tips).toString();
 	}
-	public String deleteStudent(int studentid) {
+	public String deleteStudent(String studentid) {
 		// TODO Auto-generated method stub
 		Tips tips = new Tips();
 		try {
-			baseDao.executeHql("delete from Student where id = "+studentid);
+			baseDao.executeHql("delete from Student where id = '"+studentid+"'");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
