@@ -1,7 +1,5 @@
 package edu.njupt.zhb.model;
 
-import java.math.BigDecimal;
-
 /**
  * Student entity. @author MyEclipse Persistence Tools
  */
@@ -13,7 +11,7 @@ public class Student implements java.io.Serializable {
 	private String id;
 	private String name;
 	private String course;
-	private BigDecimal score;
+	private Integer score;
 	private String remarks;
 
 	// Constructors
@@ -23,14 +21,14 @@ public class Student implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Student(String name, String course, BigDecimal score) {
+	public Student(String name, String course, Integer score) {
 		this.name = name;
 		this.course = course;
 		this.score = score;
 	}
 
 	/** full constructor */
-	public Student(String name, String course, BigDecimal score, String remarks) {
+	public Student(String name, String course, Integer score, String remarks) {
 		this.name = name;
 		this.course = course;
 		this.score = score;
@@ -63,11 +61,11 @@ public class Student implements java.io.Serializable {
 		this.course = course;
 	}
 
-	public BigDecimal getScore() {
+	public Integer getScore() {
 		return this.score;
 	}
 
-	public void setScore(BigDecimal score) {
+	public void setScore(Integer score) {
 		this.score = score;
 	}
 

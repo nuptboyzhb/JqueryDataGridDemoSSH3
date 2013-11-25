@@ -17,10 +17,10 @@
 	<!--创建jdbc数据源 -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		destroy-method="close">
-		<property name="driverClass" value="${jdbc.oracle.driver}" />
-		<property name="jdbcUrl" value="${jdbc.oracle.url}" />
-		<property name="user" value="${jdbc.oracle.username}" />
-		<property name="password" value="${jdbc.oracle.password}" />
+		<property name="driverClass" value="${jdbc.mysql.driver}" />
+		<property name="jdbcUrl" value="${jdbc.mysql.url}" />
+		<property name="user" value="${jdbc.mysql.username}" />
+		<property name="password" value="${jdbc.mysql.password}" />
 
 	</bean>
 
@@ -31,7 +31,7 @@
 		<property name="hibernateProperties">
 			<props>
 			    <prop key="hibernate.show_sql">true</prop>
-				<prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
 				<prop key="current_session_context_class">thread</prop>
 			</props>
 		</property>

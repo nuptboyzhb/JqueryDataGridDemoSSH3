@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="JqueryDataGridDemoSSH"
+  name="JqueryDataGridDemoSSH2"
   id="myeclipse.1379422277993"
-  context-root="/JqueryDataGridDemoSSH"
+  context-root="/JqueryDataGridDemoSSH2"
   j2ee-spec="5.0"
-  archive="JqueryDataGridDemoSSH.war">
+  archive="JqueryDataGridDemoSSH2.war">
   <attributes>
     <attribute name="webrootdir" value="/WebRoot" />
   </attributes>
