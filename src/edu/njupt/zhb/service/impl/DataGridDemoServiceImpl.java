@@ -10,7 +10,7 @@ import java.util.List;
 
 import net.sf.json.JSONObject;
 import edu.njupt.zhb.dao.BaseDao;
-import edu.njupt.zhb.model.Student;
+import edu.njupt.zhb.model.oracle.Student;
 import edu.njupt.zhb.service.DataGridDemoService;
 import edu.njupt.zhb.tools.DataGrid;
 import edu.njupt.zhb.tools.Tips;
@@ -22,12 +22,12 @@ import edu.njupt.zhb.tools.Tips;
  *2013-10-26  Nanjing,njupt,China
  */
 public class DataGridDemoServiceImpl implements DataGridDemoService {
-	private BaseDao<Student> baseDao;
+	private BaseDao baseDao;
 
-	public BaseDao<Student> getBaseDao() {
+	public BaseDao getBaseDao() {
 		return baseDao;
 	}
-	public void setBaseDao(BaseDao<Student> baseDao) {
+	public void setBaseDao(BaseDao baseDao) {
 		this.baseDao = baseDao;
 	}
 	public String getStudentList(int page, int rows) {
@@ -88,6 +88,4 @@ public class DataGridDemoServiceImpl implements DataGridDemoService {
 		tips.setMsg("编辑成功");
 		return JSONObject.fromObject(tips).toString();
 	}
-
-
 }

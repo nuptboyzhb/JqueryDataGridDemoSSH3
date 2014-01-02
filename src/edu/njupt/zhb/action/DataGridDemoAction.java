@@ -12,13 +12,15 @@ import java.io.PrintWriter;
 import javax.servlet.http.HttpServletResponse;
 
 import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 
 import org.apache.struts2.ServletActionContext;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import edu.njupt.zhb.model.Student;
+import edu.njupt.zhb.model.oracle.Student;
 import edu.njupt.zhb.service.DataGridDemoService;
+import edu.njupt.zhb.tools.BeanUtils;
 import edu.njupt.zhb.tools.Tips;
 
 /*
@@ -133,6 +135,13 @@ public class DataGridDemoAction extends ActionSupport {
 		String jsonResult = dataGridDemoService.editStudent(student);
 		getPrintWriter().write(jsonResult);
 		return SUCCESS;
+	}
+	
+	public void testSpringBean(){
+		//com.mchange.v2.c3p0.ComboPooledDataSource cpds = (com.mchange.v2.c3p0.ComboPooledDataSource)BeanUtils.getSpringBean("mysqlDataSource");
+	    //System.out.println(cpds.getJdbcUrl());
+		edu.njupt.zhb.model.mysql.Student stu = (edu.njupt.zhb.model.mysql.Student)BeanUtils.getSpringBean("student");
+		System.out.println(JSONObject.fromObject(stu).toString());
 	}
 	/**
 	 * 获得HttpServletResponse对象

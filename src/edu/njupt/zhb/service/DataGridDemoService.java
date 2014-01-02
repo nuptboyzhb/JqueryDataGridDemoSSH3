@@ -9,8 +9,8 @@ package edu.njupt.zhb.service;
 import java.util.List;
 
 import net.sf.json.JSONObject;
-import edu.njupt.zhb.dao.BaseDao;
-import edu.njupt.zhb.model.Student;
+import edu.njupt.zhb.dao.OracleBaseDao;
+import edu.njupt.zhb.model.oracle.Student;
 import edu.njupt.zhb.tools.DataGrid;
 import edu.njupt.zhb.tools.Tips;
 

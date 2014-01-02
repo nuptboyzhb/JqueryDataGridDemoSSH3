@@ -4,12 +4,13 @@
 "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 
-<struts>
-    <constant name="struts.server.static.browserCache" value="false" />
-	<constant name="struts.ui.theme" value="simple" />
-	<constant name="struts.devMode" value="true" />
+<struts>  
+	<constant name="struts.server.static.browserCache" value="false" /> 
+	<constant name="struts.ui.theme" value="simple" /> 
+	<constant name="struts.devMode" value="true" />   
 	<constant name="struts.i18n.encoding" value="UTF-8" />
 	<constant name="struts.configuration.xml.reload" value="true" />
+	<constant name="struts.multipart.maxSize" value="1073741824" />
 	<package name="zhbPackage" extends="struts-default">
 		<action name="getStudentList" class="dataGridDemoAction" method="getStudentList">
 		    <result type="httpheader"></result>
@@ -21,6 +22,9 @@
 		    <result type="httpheader"></result>
 		</action>
 		<action name="editStudent" class="dataGridDemoAction" method="editStudent">
+		    <result type="httpheader"></result>
+		</action>
+		<action name="testSpringBean" class="dataGridDemoAction" method="testSpringBean">
 		    <result type="httpheader"></result>
 		</action>
 	</package>

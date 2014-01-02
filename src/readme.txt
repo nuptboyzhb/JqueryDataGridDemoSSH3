@@ -24,4 +24,19 @@ CREATE TABLE `student` (
   `remarks` varchar(512) CHARACTER SET utf8 DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+5.修改MySQL的字符编码方式，设置成UTF8，这样就可以支持中文了。
+$ sudo vim /etc/mysql/my.cnf
+[client]
+default-character-set=utf8
+
+[mysql]
+default-character-set=utf8
+
+
+[mysqld]
+collation-server = utf8_unicode_ci
+init-connect='SET NAMES utf8'
+character-set-server = utf8
+修改之后重启：
+$ sudo service mysql restart
 
